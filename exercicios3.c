@@ -147,28 +147,25 @@ int main()
             printf("Os valores em ordem descendente e C, A, B, %d %d %d", C, A, B);
         } */
 
-int num;
+float num;
 
-int cond1 = 5;
-int cond2 = 200;
-int cond3 = 400;
-int x = 500;
-int y = 1000;
 
 printf("Digite o numero: ");
-scanf("%d", &num);
-fflush(stdin);
+scanf("%f", &num);
 
-if(num == cond1){
+if(num == 5){
     printf("O numero e igual a 5");
-}else if(num == cond2){
+}else if(num == 200){
     printf("O numero e igual a 200");
-}else if(num == cond3){
+}else if(num == 400){
     printf("O numero e igual a 400");
-}else if(x>=num && num<=y){
-    printf("O numero e um valor entre 500 e 1000");
 }else{
-    printf("O valor nao se enquadra em nenhuma das codicoes");
+    printf("O numero nao e igual a nenhuma alternativa");
+} 
+if(num >= 500 && num <= 1000){
+    printf("\nO numero e um valor entre 500 e 1000");
+}else{
+    printf("\nO valor nao e um valor entre 500 e 1000");
 }
 
 }
