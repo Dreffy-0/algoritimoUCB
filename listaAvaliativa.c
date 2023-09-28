@@ -267,7 +267,7 @@ int main()
 	*/
 
 	//* questão 10
-	/* 
+	
 	//? Declarando um Array de estruturas para armazenar os dados das cidades
 	struct Cidade cidades[Num_Cidades];
 
@@ -311,7 +311,7 @@ int main()
 	int numCidadesRS = 0;
 	//? Fazendo os calculos da média de acidentes com vítimas no Rio Grande do Sul
 	for(int i = 0; i < Num_Cidades; i++) {
-		if(stricmp(cidades[i].estado, "RS") == 0){
+		if(strcmp(cidades[i].estado, "RS") == 0){
 			totalAcidentesRS += cidades[i].acidentes;
 			numCidadesRS++;
 		}
@@ -323,5 +323,5 @@ int main()
 	printf("Menor indice de acidentes de transito: %d na cidade de codigo %d\n", minAcidentes, cidades[indiceMinAcidentes].codigo);
 	printf("Media de veiculos em todas as cidades: %.2f\n", mediaVeiculos);
 	printf("Media de acidentes com vitimas no estado Rio Grande do Sul: %.2f\n", mediaAcidentesRS);
-	*/
+	
 }
